@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.076);
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.calculator {
+    width: 300px;
+    height: 400px;
+    margin: 100px auto 0 auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.761);
+    padding: 10px;
+}
+
+.display-calc {
+    display: block;
+    width: 85%;
+    height: 20px;
+    margin: 20px auto 0 auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: white;
+    text-align: end;
+    font-size: 1.1em;
+}
+
+.btns {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 60px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2px;
+}
+
+.btns button {
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.245);
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.186);
+    color: white;
+    font-size: 1.1em;
+}
+
+.btns button:hover {
+    background-color: rgba(128, 128, 128, 0.564);
+}
+
+.btns-group1 .btn2, .btns-group1 .btn3 {
+    display: grid;
+    column-gap: 2px;
+}
+
+.btns-group1 .btn2 {
+    grid-template-columns: 2fr 1fr;
+    margin-top: 2px;
+}
+
+.btns-group1 .btn3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2px;
+}
+
+.btns-group2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    row-gap: 2px;
+    height: 100%;
+}
+
+.btns-group2 button {
+    height: 100%;
+}
+
+
