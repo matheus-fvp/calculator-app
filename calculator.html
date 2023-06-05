@@ -54,7 +54,29 @@
 
     <script>
         function calculate(type, value) {
-            console.log(type, value)
+            var display = document.getElementById('display-calc')
+            if(type === 'action') {
+
+                switch(value) {
+                    case 'c':
+                        display.value = ''
+                        break
+                    case '+':
+                    case '-':
+                    case '*':
+                    case '/':
+                    case '.':
+                        display.value += value
+                        break
+                    case '=': 
+                        display.value = eval(display.value)
+                        break
+                    default:
+                        break
+                }
+            }else if(type === 'value') {
+                display.value += value
+            }
         }
     </script>
 </body>
